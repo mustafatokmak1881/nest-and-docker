@@ -11,6 +11,6 @@ export class AppController {
   }
   @Get("hi")
   getHi() :string {
-    return "Hi";
+    return "hi";
   }
 }
