@@ -15,7 +15,7 @@ import { UsersService } from './users/users.service';
       username: 'root',
       password: '',
       database: 'xpressgaming_integration',
-      entities: [__dirname + '/**/*.entity{.ts,.js}', Users],
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
   ],
