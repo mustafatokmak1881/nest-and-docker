@@ -10,13 +10,6 @@ export class UserService {
     private userRepository: Repository<User>,
   ) {}
 
-  getUsers(): any {
-    return {
-      status: true,
-      message: 'User list will be at here',
-    };
-  }
-
   findAll(): Promise<User[]> {
     return this.userRepository.find();
   }
