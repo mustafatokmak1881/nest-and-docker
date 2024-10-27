@@ -6,6 +6,7 @@ import { DataSource } from 'typeorm';
 import { UserController } from './user/user.controller';
 import { UserService } from './user/user.service';
 import { UserModule } from './user/user.module';
+import { User } from './user/users/user.entity';
 
 @Module({
   imports: [
@@ -16,7 +17,7 @@ import { UserModule } from './user/user.module';
       username: 'root',
       password: '',
       database: 'nest-test-db',
-      entities: [],
+      entities: [User],
       synchronize: true,
     }),
     UserModule,
