@@ -12,10 +12,10 @@ import { User } from './user/users/user.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
-      port: 3307,
+      host: 'db',
+      port: 3306,
       username: 'root',
-      password: '',
+      password: 'b3yaz',
       database: 'nest-test-db',
       entities: [User],
       synchronize: false,
